@@ -8,5 +8,9 @@
   <body>
     <main id="main"></main>
     <script type="text/javascript" src="index.js"></script>
+    const mainElement = document.getElementById('main');
+    if (mainElement) {
+      mainElement.parentNode.removeChild(mainElement);
+    }
   </body>
 </html>
